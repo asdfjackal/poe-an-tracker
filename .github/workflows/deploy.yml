@@ -20,4 +20,5 @@ jobs:
       with:
         node-version: 17.x
         cache: 'npm'
+    - run: npm install
     - run: npm run deploy
