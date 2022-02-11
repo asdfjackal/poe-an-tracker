@@ -30,6 +30,8 @@ function App() {
               <Tabs aria-label="basic tabs example">
                 <Tab label="Inventory" />
                 <Tab label="Crafts" />
+                <Tab label="Settings" />
+                <Tab label="About" />
               </Tabs>
             </Box>
             <br />
