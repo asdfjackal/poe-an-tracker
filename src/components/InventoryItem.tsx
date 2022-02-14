@@ -4,7 +4,6 @@ import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import { Modifier } from '../react-app-env';
 import data from '../data.json'
-import { useState } from 'react';
 
 export default function InventoryItem(props: {dataKey: string, modifier: Modifier, count: number, increment: Function, decrement: Function}) {
   const {dataKey, modifier, count, increment, decrement} = props
