@@ -2,10 +2,12 @@ import { Box, Card, CardContent, Container, Tab, Tabs } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import {Routes, Route, Link} from 'react-router-dom';
 import React, { useState } from 'react';
-import Inventory from './components/Inventory';
+import Inventory from './pages/Inventory';
 import Navbar from './Navbar';
 import data from './data.json'
+import Crafting from './pages/Crafting';
 
 function App() {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
@@ -49,19 +51,39 @@ function App() {
         <Card>
           <CardContent>
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-              <Tabs aria-label="basic tabs example">
-                <Tab label="Inventory" />
-                <Tab label="Crafts" />
-                <Tab label="Settings" />
-                <Tab label="About" />
+              <Tabs aria-label="Navigation Tabs">
+                <Tab label="Inventory" value="/" to="/" component={Link} />
+                <Tab label="Crafts" value="/crafting" to="/crafting" component={Link}  />
+                <Tab label="Settings" value="/settings" to="/settings" component={Link}  />
+                <Tab label="About" value="/about" to="/about" component={Link}  />
               </Tabs>
             </Box>
             <br />
-            <Inventory
-              inventory={inventory}
-              increment={increment}
-              decrement={decrement}
-            />
+            <Routes>
+              <Route path="/" element={<Inventory
+                  inventory={inventory}
+                  increment={increment}
+                  decrement={decrement}
+                />} 
+              />
+              <Route path="/crafting" element={<Crafting
+                  inventory={inventory}
+                />} 
+              />
+              <Route path="*" element={<Inventory
+                  inventory={inventory}
+                  increment={increment}
+                  decrement={decrement}
+                />} 
+              />
+              <Route path="*" element={<Inventory
+                  inventory={inventory}
+                  increment={increment}
+                  decrement={decrement}
+                />} 
+              />
+            </Routes>
+            
           </CardContent> 
         </Card>
       </Container>

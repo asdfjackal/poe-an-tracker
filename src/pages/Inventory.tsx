@@ -1,5 +1,5 @@
 import { Grid, List, Typography } from '@mui/material';
-import InventoryItem from './InventoryItem';
+import InventoryItem from '../components/InventoryItem';
 import { data } from '../data'
 
 export default function Inventory(props: {inventory: any, increment: Function, decrement: Function}){
