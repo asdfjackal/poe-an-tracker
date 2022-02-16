@@ -33,6 +33,25 @@ function App() {
     localStorage.setItem('archnemesis-inventory', JSON.stringify(Object.fromEntries(newInventory.entries())))
   }
 
+  const craft = (key: string) : boolean => {
+    const recipe: string[] = (data as any)[key].ingredients
+    console.log(recipe)
+    let output = inventory
+    const outputCount = output.get(key)
+    if(outputCount === undefined) return false
+    for(const i in recipe) {
+      const ingredient = recipe[i]
+      const count = output.get(ingredient)
+      console.log("%d: %d", ingredient, count)
+      if(count === undefined) return false
+      if(count === 0) return false
+      output = new Map(output.set(ingredient, count-1))
+    }
+    output = new Map(output.set(key, outputCount+1))
+    updateInventory(output)
+    return true
+  }
+
   const theme = React.useMemo(
     () =>
       createTheme({
@@ -68,6 +87,7 @@ function App() {
               />
               <Route path="/crafting" element={<Crafting
                   inventory={inventory}
+                  craft={craft}
                 />} 
               />
               <Route path="*" element={<Inventory

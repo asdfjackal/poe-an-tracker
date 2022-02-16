@@ -8,7 +8,7 @@ export default function Inventory(props: {inventory: any, increment: Function, d
   for(let i=0; i<5; i++){
     tiers[i] = Array.from(data.entries()).filter(([key, value]) => {
       return value.tier === i+1
-    })
+    }).sort((a, b) => a[1].name.localeCompare(b[1].name))
   }
   return (
     <Grid container columns={5} spacing={1}>

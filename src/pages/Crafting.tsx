@@ -1,12 +1,14 @@
-import { Avatar, Badge, Checkbox, Grid, List, ListItem, ListItemAvatar, ListItemButton, ListItemText, Typography } from '@mui/material';
+import { Grid, List, Typography } from '@mui/material';
+import AvailableCraft from '../components/AvailableCraft';
+import FavoriteCraft from '../components/FavoriteCraft';
 import { data } from '../data'
 import { Modifier } from '../react-app-env';
 
-export default function Crafting(props: {inventory: Map<string, number>}) {
-  const { inventory } = props
+export default function Crafting(props: {inventory: Map<string, number>, craft: Function}) {
+  const { inventory, craft } = props
 
 
-  const craftableMods = Array.from(data.entries()).filter(([key, value]) => (value.tier > 1))
+  const craftableMods = Array.from(data.entries()).filter(([key, value]) => (value.tier > 1)).sort((a, b) => a[1].name.localeCompare(b[1].name))
   const availableCrafts = craftableMods.map(([key, value]): [string, Modifier, number] => {
     const count = Math.min(...value.ingredients.map( ingredient => ((inventory.get(ingredient) as number) | 0)))
     return [key, value, count]
@@ -21,25 +23,8 @@ export default function Crafting(props: {inventory: Map<string, number>}) {
         <List dense={true}>
           {
             availableCrafts.map( ([key, value, count]) => (
-              
-              <ListItem
-                key={key}
-                disablePadding
-              >
-                <ListItemButton>
-                  <ListItemAvatar>
-                    <Badge
-                      badgeContent={count}
-                    >
-                      <Avatar src={process.env.PUBLIC_URL + `/images/archnemesis/${key}.png`} />
-                    </Badge>
-                  </ListItemAvatar>
-                  <ListItemText primary={value.name} />
-                </ListItemButton>
-              </ListItem>
-            )
-
-            )
+              <AvailableCraft key={key} dataKey={key} value={value} count={count} craft={() => craft(key)} />
+            ))
           }
         </List>
       </Grid>
@@ -49,27 +34,9 @@ export default function Crafting(props: {inventory: Map<string, number>}) {
         </Typography>
         <List dense={true}>
           {
-            Array.from(data.entries()).filter(([key, value]) => (value.tier > 1)).map( ([key, value]) => (
-              
-              <ListItem
-                key={key}
-                secondaryAction={
-                  <Checkbox
-                    edge="end"
-                  />
-                }
-                disablePadding
-              >
-                <ListItemButton>
-                  <ListItemAvatar>
-                  <Avatar src={process.env.PUBLIC_URL + `/images/archnemesis/${key}.png`} />
-                  </ListItemAvatar>
-                  <ListItemText primary={value.name} />
-                </ListItemButton>
-              </ListItem>
-            )
-
-            )
+            Array.from(data.entries()).filter(([key, value]) => (value.tier > 1)).sort((a, b) => a[1].name.localeCompare(b[1].name)).map( ([key, value]) => (
+              <FavoriteCraft key={key} dataKey={key} value={value} />
+            ))
           }
         </List>
       </Grid>

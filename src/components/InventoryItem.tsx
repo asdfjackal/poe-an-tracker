@@ -9,7 +9,7 @@ export default function InventoryItem(props: {dataKey: string, modifier: Modifie
   const {dataKey, modifier, count, increment, decrement} = props
 
   return(
-    <PopupState variant="popover" popupId="demo-popup-popover">
+    <PopupState variant="popover" popupId={`${dataKey}-inventory-popover`}>
       {(popupState) => (
         <div>
           <ListItem
