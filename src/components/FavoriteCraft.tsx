@@ -3,8 +3,9 @@ import PopupState, { bindTrigger } from 'material-ui-popup-state';
 import { Modifier } from '../react-app-env';
 import ModifierPopover from './ModifierPopover';
 
-export default function FavoriteCraft(props: {dataKey: string, value: Modifier}) {
-  const {dataKey, value} = props;
+export default function FavoriteCraft(props: {dataKey: string, value: Modifier, isFavorite: boolean, toggle: Function}) {
+  const {dataKey, value, isFavorite, toggle} = props;
+
   return(
     <PopupState variant="popover" popupId={`${dataKey}-available-craft-popover`}>
       {
@@ -15,8 +16,10 @@ export default function FavoriteCraft(props: {dataKey: string, value: Modifier})
               secondaryAction={
                 <Checkbox
                   edge="end"
+                  checked={isFavorite}
                   onClick={(e) => {
                     e.stopPropagation()
+                    toggle()
                   }}
                 />
               }

@@ -11,9 +11,14 @@ import Crafting from './pages/Crafting';
 
 function App() {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
-  const savedState = localStorage.getItem('archnemesis-inventory')
+  const savedInventory = localStorage.getItem('archnemesis-inventory')
+  const savedFavorites = localStorage.getItem('archnemesis-favorites')
   const [inventory, updateInventory] = useState(
-    savedState === null ? new Map<string, number>(Object.keys(data).map(key => [key, 0])) : new Map<string, number>(Object.entries(JSON.parse(savedState)))
+    savedInventory === null ? new Map<string, number>(Object.keys(data).map(key => [key, 0])) : new Map<string, number>(Object.entries(JSON.parse(savedInventory)))
+  )
+
+  const [favorites, updateFavorites] = useState<string[]>(
+    savedFavorites === null ? [] : JSON.parse(savedFavorites)
   )
 
   const increment = (key: string) => {
@@ -49,7 +54,20 @@ function App() {
     }
     output = new Map(output.set(key, outputCount+1))
     updateInventory(output)
+    localStorage.setItem('archnemesis-inventory', JSON.stringify(Object.fromEntries(output.entries())))
     return true
+  }
+
+  const toggleFavorite = (key: string) => {
+    let newFavorites = []
+    if(!favorites.includes(key)){
+      newFavorites = [...favorites, key]
+    }else{
+      newFavorites = favorites.slice()
+      newFavorites.splice(favorites.indexOf(key), 1)
+    }
+    updateFavorites(newFavorites)
+    localStorage.setItem('archnemesis-favorites', JSON.stringify(newFavorites))
   }
 
   const theme = React.useMemo(
@@ -88,6 +106,8 @@ function App() {
               <Route path="/crafting" element={<Crafting
                   inventory={inventory}
                   craft={craft}
+                  favorites={favorites}
+                  toggleFavorite={toggleFavorite}
                 />} 
               />
               <Route path="*" element={<Inventory
