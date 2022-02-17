@@ -24,7 +24,7 @@ export default function ModifierPopover(props: {modifier: Modifier, popupState: 
         <p>Rewards</p>
         <ul>
           {modifier.rewards.map((reward: string) => (
-            <li>{reward}</li>
+            <li key={reward}>{reward}</li>
           ))}
         </ul>
         {modifier.ingredients.length !== 0 ? (
@@ -32,7 +32,7 @@ export default function ModifierPopover(props: {modifier: Modifier, popupState: 
             <p>Ingredients:</p>
             <ul>
               {modifier.ingredients.map((key: string) => (
-                <li>{(data as any)[key].name}</li>
+                <li key={key}>{(data as any)[key].name}</li>
               ))}
             </ul>
           </>
@@ -42,7 +42,7 @@ export default function ModifierPopover(props: {modifier: Modifier, popupState: 
             <p>Used In:</p>
             <ul>
               {modifier.used_in.map((key: string) => (
-                <li>{(data as any)[key].name}</li>
+                <li key={key}>{(data as any)[key].name}</li>
               ))}
             </ul>
           </>

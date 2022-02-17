@@ -22,11 +22,7 @@ export default function Crafting(props: {inventory: Map<string, number>, craft: 
   }
 
   const favoriteIngredients = favorites.reduce((list: string[], favorite: string) => [...list, ...getBaseIngredients(favorite)], [])
-  console.log(favoriteIngredients)
   const targetKeys = Array.from(new Set(favoriteIngredients))
-
-  console.log(targetKeys)
-  // .map((item): [string, number] => [item, favoriteIngredients.filter((i) => i === item).length])
 
   const targetItems = Array.from(data.entries()).filter(([key, value]) => (targetKeys.includes(key))).map(([key, value]): [string, Modifier, number] => [key, value, favoriteIngredients.filter((i) => i === key).length])
 

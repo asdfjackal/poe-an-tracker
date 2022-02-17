@@ -14,7 +14,7 @@ export default function Inventory(props: {inventory: any, increment: Function, d
     <Grid container columns={5} spacing={1}>
       {
         tiers.map((tier, index) => (
-          <Grid item xs={1}>
+          <Grid item key={index} xs={1}>
             <Typography align="center">
               Tier {index+1}
             </Typography>
