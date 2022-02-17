@@ -107,10 +107,6 @@ function App() {
     setActiveModal(ModalState.None)
   }
 
-  const modalHandler = (e: React.KeyboardEvent) => {
-    console.log(e)
-  }
-
   const theme = React.useMemo(
     () =>
       createTheme({
