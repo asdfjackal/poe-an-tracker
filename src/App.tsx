@@ -9,6 +9,8 @@ import Navbar from './Navbar';
 import data from './data.json'
 import Crafting from './pages/Crafting';
 import ActionModal from './components/ActionModal';
+import About from './pages/About';
+import Settings from './pages/Settings';
 
 enum ModalState {
   Add = 'a',
@@ -147,17 +149,9 @@ function App() {
                   toggleFavorite={toggleFavorite}
                 />} 
               />
-              <Route path="*" element={<Inventory
-                  inventory={inventory}
-                  increment={increment}
-                  decrement={decrement}
-                />} 
+              <Route path="/about" element={<About />} 
               />
-              <Route path="*" element={<Inventory
-                  inventory={inventory}
-                  increment={increment}
-                  decrement={decrement}
-                />} 
+              <Route path="*" element={<Settings />} 
               />
             </Routes>
             
