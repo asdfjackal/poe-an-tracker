@@ -1,7 +1,7 @@
-import { Grid, List, Typography } from "@mui/material";
+import { Avatar, Chip, Grid, List, Typography } from "@mui/material";
+import { useState } from "react";
 import AvailableCraft from "../components/AvailableCraft";
 import FavoriteCraft from "../components/FavoriteCraft";
-import TargetItem from "../components/TargetItem";
 import { data } from "../data";
 import { Modifier } from "../react-app-env";
 
@@ -12,6 +12,7 @@ export default function Crafting(props: {
   toggleFavorite: Function;
 }) {
   const { inventory, craft, favorites, toggleFavorite } = props;
+  const [hoveredTarget, setHoveredTarget] = useState<string | null>(null);
 
   const craftableMods = Array.from(data.entries())
     .filter(([key, value]) => value.tier > 1)
@@ -33,7 +34,7 @@ export default function Crafting(props: {
     return item.ingredients.reduce(
       (list: string[], ingredient: string) =>
         list.concat(getBaseIngredients(ingredient)),
-      []
+      [key]
     );
   }
 
@@ -48,11 +49,20 @@ export default function Crafting(props: {
 
   const targetItems = Array.from(data.entries())
     .filter(([key, value]) => targetKeys.includes(key))
-    .map(([key, value]): [string, Modifier, number] => [
+    .map(([key, value]: [string, Modifier]): [string, Modifier, boolean] => [
       key,
       value,
-      favoriteIngredients.filter((i) => i === key).length,
+      value.ingredients.includes(hoveredTarget) ||
+        value.used_in.includes(hoveredTarget),
     ]);
+
+  const tieredTargets = targetItems.reduce(function (tiers: any, target) {
+    if (!tiers[target[1].tier]) {
+      tiers[target[1].tier] = [];
+    }
+    tiers[target[1].tier].push(target);
+    return tiers;
+  }, []);
 
   return (
     <Grid container columns={3} spacing={1}>
@@ -72,11 +82,39 @@ export default function Crafting(props: {
       </Grid>
       <Grid item xs={1}>
         <Typography align="center">Target Items</Typography>
-        <List dense={true}>
-          {targetItems.map(([key, value, count]) => (
-            <TargetItem key={key} dataKey={key} value={value} count={count} />
-          ))}
-        </List>
+        {tieredTargets.map(
+          (targets: [string, Modifier, boolean][], tier: number) => (
+            <>
+              <Typography align="center">Tier {tier}</Typography>
+              {targets
+                .sort((a, b) => a[1].name.localeCompare(b[1].name))
+                .map(([key, value, colored]) => (
+                  <>
+                    <Chip
+                      onMouseEnter={() => {
+                        setHoveredTarget(key);
+                      }}
+                      onMouseLeave={() => {
+                        setHoveredTarget(null);
+                      }}
+                      avatar={
+                        <Avatar
+                          src={
+                            process.env.PUBLIC_URL +
+                            `/images/archnemesis/${key}.png`
+                          }
+                        />
+                      }
+                      color={colored ? "primary" : undefined}
+                      label={value.name}
+                      variant={colored ? undefined : "outlined"}
+                    />
+                    &nbsp;
+                  </>
+                ))}
+            </>
+          )
+        )}
       </Grid>
       <Grid item xs={1}>
         <Typography align="center">Favorite Crafts</Typography>
