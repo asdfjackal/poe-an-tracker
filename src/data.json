@@ -2,337 +2,207 @@
   "toxic": {
     "name": "Toxic",
     "description": "Monster has augmented Poison powers",
-    "rewards": [
-      "Generic",
-      "Gems"
-    ],
+    "rewards": ["Generic", "Gems"],
     "ingredients": [],
-    "used_in": [
-      "entangler",
-      "treanthorde"
-    ],
+    "used_in": ["entangler", "treanthorde"],
     "extra": null,
     "tier": 1
   },
   "chaosweaver": {
     "name": "Chaosweaver",
     "description": "Monster is imbued with Chaos Damage and Resistance",
-    "rewards": [
-      "Gems"
-    ],
+    "rewards": ["Gems"],
     "ingredients": [],
-    "used_in": [
-      "hexer",
-      "corrupter",
-      "empoweredelements"
-    ],
+    "used_in": ["hexer", "corrupter", "empoweredelements"],
     "extra": null,
     "tier": 1
   },
   "frostweaver": {
     "name": "Frostweaver",
     "description": "Monster is imbued with Cold Damage and Resistance",
-    "rewards": [
-      "Armour"
-    ],
+    "rewards": ["Armour"],
     "ingredients": [],
-    "used_in": [
-      "froststrider",
-      "evocationist"
-    ],
+    "used_in": ["froststrider", "evocationist"],
     "extra": null,
     "tier": 1
   },
   "permafrost": {
     "name": "Permafrost",
     "description": "Monster has augmented Freeze and Chill powers",
-    "rewards": [
-      "Generic",
-      "Armour"
-    ],
+    "rewards": ["Generic", "Armour"],
     "ingredients": [],
-    "used_in": [
-      "iceprison",
-      "crystalskinned"
-    ],
+    "used_in": ["iceprison", "crystalskinned"],
     "extra": null,
     "tier": 1
   },
   "hasted": {
     "name": "Hasted",
     "description": "Monster is faster",
-    "rewards": [
-      "Generic"
-    ],
+    "rewards": ["Generic"],
     "ingredients": [],
-    "used_in": [
-      "froststrider",
-      "flamestrider",
-      "stormstrider"
-    ],
+    "used_in": ["froststrider", "flamestrider", "stormstrider"],
     "extra": null,
     "tier": 1
   },
   "deadeye": {
     "name": "Deadeye",
     "description": "Monster is Accurate and applies Marks",
-    "rewards": [
-      "Armour",
-      "Trinkets"
-    ],
+    "rewards": ["Armour", "Trinkets"],
     "ingredients": [],
-    "used_in": [
-      "assassin",
-      "droughtbringer"
-    ],
+    "used_in": ["assassin", "droughtbringer"],
     "extra": null,
     "tier": 1
   },
   "bombardier": {
     "name": "Bombardier",
     "description": "Monster has augmented Projectile powers and periodically unleashes a barrage of mortars",
-    "rewards": [
-      "Weapon",
-      "Armour"
-    ],
+    "rewards": ["Weapon", "Armour"],
     "ingredients": [],
-    "used_in": [
-      "necromancer"
-    ],
+    "used_in": ["necromancer"],
     "extra": null,
     "tier": 1
   },
   "flameweaver": {
     "name": "Flameweaver",
     "description": "Monster is imbued with Fire Damage and Resistance",
-    "rewards": [
-      "Weapon"
-    ],
+    "rewards": ["Weapon"],
     "ingredients": [],
-    "used_in": [
-      "flamestrider",
-      "evocationist"
-    ],
+    "used_in": ["flamestrider", "evocationist"],
     "extra": null,
     "tier": 1
   },
   "incendiary": {
     "name": "Incendiary",
     "description": "Monster has augmented Ignite powers",
-    "rewards": [
-      "Generic",
-      "Weapon"
-    ],
+    "rewards": ["Generic", "Weapon"],
     "ingredients": [],
-    "used_in": [
-      "corpsedetonator",
-      "magmabarrier"
-    ],
+    "used_in": ["corpsedetonator", "magmabarrier"],
     "extra": null,
     "tier": 1
   },
   "arcanebuffer": {
     "name": "Arcane Buffer",
     "description": "Monster has augmented Energy Shield powers and releases a stunning nova when Energy Shield breaks",
-    "rewards": [
-      "Essences"
-    ],
+    "rewards": ["Essences"],
     "ingredients": [],
-    "used_in": [
-      "heraldingminions",
-      "temporalbubble"
-    ],
+    "used_in": ["heraldingminions", "temporalbubble"],
     "extra": null,
     "tier": 1
   },
   "echoist": {
     "name": "Echoist",
     "description": "Monster repeats skills additional times",
-    "rewards": [
-      "Generic",
-      "Currency"
-    ],
+    "rewards": ["Generic", "Currency"],
     "ingredients": [],
-    "used_in": [
-      "trickster",
-      "hexer",
-      "mirrorimage"
-    ],
+    "used_in": ["trickster", "hexer", "mirrorimage"],
     "extra": null,
     "tier": 1
   },
   "stormweaver": {
     "name": "Stormweaver",
     "description": "Monster is imbued with Lightning Damage and Resistance",
-    "rewards": [
-      "Trinkets"
-    ],
+    "rewards": ["Trinkets"],
     "ingredients": [],
-    "used_in": [
-      "evocationist",
-      "stormstrider"
-    ],
+    "used_in": ["evocationist", "stormstrider"],
     "extra": null,
     "tier": 1
   },
   "dynamo": {
     "name": "Dynamo",
     "description": "Monster has augmented Shock powers",
-    "rewards": [
-      "Generic",
-      "Trinkets"
-    ],
+    "rewards": ["Generic", "Trinkets"],
     "ingredients": [],
-    "used_in": [
-      "heraldingminions",
-      "manasiphoner"
-    ],
+    "used_in": ["heraldingminions", "manasiphoner"],
     "extra": null,
     "tier": 1
   },
   "bonebreaker": {
     "name": "Bonebreaker",
     "description": "Monster has augmented Stun powers. Monster hits are slower and can't be evaded",
-    "rewards": [
-      "Generic",
-      "Weapon"
-    ],
+    "rewards": ["Generic", "Weapon"],
     "ingredients": [],
-    "used_in": [
-      "magmabarrier",
-      "tukohamatouched"
-    ],
+    "used_in": ["magmabarrier", "tukohamatouched"],
     "extra": null,
     "tier": 1
   },
   "bloodletter": {
     "name": "Bloodletter",
     "description": "Monster has augmented Bleed powers. Monster Maims nearby enemies",
-    "rewards": [
-      "Weapon",
-      "Trinkets"
-    ],
+    "rewards": ["Weapon", "Trinkets"],
     "ingredients": [],
-    "used_in": [
-      "entangler",
-      "corrupter"
-    ],
+    "used_in": ["entangler", "corrupter"],
     "extra": "Items dropped from the Monster and its Minions are Corrupted",
     "tier": 1
   },
   "steelinfused": {
     "name": "Steel-infused",
     "description": "Monster is imbued with Physical Damage and Physical Damage Reduction",
-    "rewards": [
-      "Weapon"
-    ],
+    "rewards": ["Weapon"],
     "ingredients": [],
-    "used_in": [
-      "treanthorde",
-      "empoweredelements"
-    ],
+    "used_in": ["treanthorde", "empoweredelements"],
     "extra": null,
     "tier": 1
   },
   "gargantuan": {
     "name": "Gargantuan",
     "description": "Monster is massive, granting more Life, Area of Effect, and Damage",
-    "rewards": [
-      "Currency"
-    ],
+    "rewards": ["Currency"],
     "ingredients": [],
-    "used_in": [
-      "empoweringminions",
-      "rejuvenating",
-      "souleater"
-    ],
+    "used_in": ["empoweringminions", "rejuvenating", "souleater"],
     "extra": null,
     "tier": 1
   },
   "berserker": {
     "name": "Berserker",
     "description": "Monster Enrages as it loses life",
-    "rewards": [
-      "Uniques"
-    ],
+    "rewards": ["Uniques"],
     "ingredients": [],
-    "used_in": [
-      "executioner",
-      "crystalskinned"
-    ],
+    "used_in": ["executioner", "crystalskinned"],
     "extra": null,
     "tier": 1
   },
   "sentinel": {
     "name": "Sentinel",
     "description": "Monster is imbued with Block and Spell Block. Monster Triggers Reckoning when hit",
-    "rewards": [
-      "Armour",
-      "Armour"
-    ],
+    "rewards": ["Armour", "Armour"],
     "ingredients": [],
-    "used_in": [
-      "treanthorde",
-      "iceprison",
-      "invulnerable"
-    ],
+    "used_in": ["treanthorde", "iceprison", "invulnerable"],
     "extra": null,
     "tier": 1
   },
   "juggernaut": {
     "name": "Juggernaut",
     "description": "Monster cannot be Slowed or Stunned. Monster gains Endurance Charges",
-    "rewards": [
-      "Harbinger"
-    ],
+    "rewards": ["Harbinger"],
     "ingredients": [],
-    "used_in": [
-      "temporalbubble",
-      "invulnerable"
-    ],
+    "used_in": ["temporalbubble", "invulnerable"],
     "extra": null,
     "tier": 1
   },
   "vampiric": {
     "name": "Vampiric",
     "description": "Monster has augmented Life Leech powers",
-    "rewards": [
-      "Fossils"
-    ],
+    "rewards": ["Fossils"],
     "ingredients": [],
-    "used_in": [
-      "assassin",
-      "rejuvenating"
-    ],
+    "used_in": ["assassin", "rejuvenating"],
     "extra": null,
     "tier": 1
   },
   "overcharged": {
     "name": "Overcharged",
     "description": "Monster grants Charges to itself and Allies over time",
-    "rewards": [
-      "Trinkets",
-      "Trinkets"
-    ],
+    "rewards": ["Trinkets", "Trinkets"],
     "ingredients": [],
-    "used_in": [
-      "trickster",
-      "necromancer"
-    ],
+    "used_in": ["trickster", "necromancer"],
     "extra": null,
     "tier": 1
   },
   "soulconduit": {
     "name": "Soul Conduit",
     "description": "On death, Monster and nearby Allies are revived",
-    "rewards": [
-      "Maps"
-    ],
+    "rewards": ["Maps"],
     "ingredients": [],
-    "used_in": [
-      "souleater",
-      "mirrorimage"
-    ],
+    "used_in": ["souleater", "mirrorimage"],
     "extra": null,
     "tier": 1
   },
@@ -348,113 +218,62 @@
   "malediction": {
     "name": "Malediction",
     "description": "Monster has a weakening Aura",
-    "rewards": [
-      "DivinationCards"
-    ],
+    "rewards": ["DivinationCards"],
     "ingredients": [],
-    "used_in": [
-      "droughtbringer",
-      "effigy"
-    ],
+    "used_in": ["droughtbringer", "effigy"],
     "extra": null,
     "tier": 1
   },
   "consecrator": {
     "name": "Consecrator",
     "description": "Monster periodically creates Consecrated Ground, healing allies and making them immune to curses and ailments",
-    "rewards": [
-      "Fragments"
-    ],
+    "rewards": ["Fragments"],
     "ingredients": [],
-    "used_in": [
-      "manasiphoner",
-      "invulnerable"
-    ],
+    "used_in": ["manasiphoner", "invulnerable"],
     "extra": null,
     "tier": 1
   },
   "frenzied": {
     "name": "Frenzied",
     "description": "Monster and allies periodically Enrage",
-    "rewards": [
-      "Generic",
-      "Uniques"
-    ],
+    "rewards": ["Generic", "Uniques"],
     "ingredients": [],
-    "used_in": [
-      "executioner",
-      "abberathtouched"
-    ],
+    "used_in": ["executioner", "abberathtouched"],
     "extra": null,
     "tier": 1
   },
   "heraldingminions": {
     "name": "Heralding Minions",
     "description": "Monster's minions summon invulnerable Lightning Totems on death",
-    "rewards": [
-      "Fragments",
-      "Fragments"
-    ],
-    "ingredients": [
-      "dynamo",
-      "arcanebuffer"
-    ],
-    "used_in": [
-      "brinekingtouched"
-    ],
+    "rewards": ["Fragments", "Fragments"],
+    "ingredients": ["dynamo", "arcanebuffer"],
+    "used_in": ["brinekingtouched"],
     "extra": null,
     "tier": 2
   },
   "empoweringminions": {
     "name": "Empowering Minions",
     "description": "Monster's minions are empowered. Minions empower the Monster with additional modifiers on death",
-    "rewards": [
-      "Blight",
-      "Ritual"
-    ],
-    "ingredients": [
-      "necromancer",
-      "executioner",
-      "gargantuan"
-    ],
-    "used_in": [
-      "lunaristouched",
-      "solaristouched"
-    ],
+    "rewards": ["Blight", "Ritual"],
+    "ingredients": ["necromancer", "executioner", "gargantuan"],
+    "used_in": ["lunaristouched", "solaristouched"],
     "extra": null,
     "tier": 3
   },
   "assassin": {
     "name": "Assassin",
     "description": "Monster has augmented Critical powers and has Shroud Walker",
-    "rewards": [
-      "Currency",
-      "Currency"
-    ],
-    "ingredients": [
-      "deadeye",
-      "vampiric"
-    ],
-    "used_in": [
-      "trickster",
-      "arakaalitouched"
-    ],
+    "rewards": ["Currency", "Currency"],
+    "ingredients": ["deadeye", "vampiric"],
+    "used_in": ["trickster", "arakaalitouched"],
     "extra": null,
     "tier": 2
   },
   "trickster": {
     "name": "Trickster",
     "description": "Monster has damage avoidance. Monster periodically Flees",
-    "rewards": [
-      "Currency",
-      "Uniques",
-      "DivinationCards"
-    ],
-    "ingredients": [
-      "overcharged",
-      "assassin",
-      "echoist"
-    ],
+    "rewards": ["Currency", "Uniques", "DivinationCards"],
+    "ingredients": ["overcharged", "assassin", "echoist"],
     "used_in": [],
     "extra": null,
     "tier": 3
@@ -462,121 +281,62 @@
   "necromancer": {
     "name": "Necromancer",
     "description": "Monster can raise Undead. Minions are empowered and revive shortly after dying",
-    "rewards": [
-      "Generic"
-    ],
-    "ingredients": [
-      "bombardier",
-      "overcharged"
-    ],
-    "used_in": [
-      "empoweringminions",
-      "souleater",
-      "corpsedetonator"
-    ],
+    "rewards": ["Generic"],
+    "ingredients": ["bombardier", "overcharged"],
+    "used_in": ["empoweringminions", "souleater", "corpsedetonator"],
     "extra": "Rewards are rolled 2 additional times, choosing the rarest result",
     "tier": 2
   },
   "rejuvenating": {
     "name": "Rejuvenating",
     "description": "Monster has Life Regeneration. Periodically releases a wave that heals nearby allies and prevents enemy Life and Energy Shield recovery",
-    "rewards": [
-      "Currency"
-    ],
-    "ingredients": [
-      "gargantuan",
-      "vampiric"
-    ],
-    "used_in": [
-      "crystalskinned",
-      "abberathtouched"
-    ],
+    "rewards": ["Currency"],
+    "ingredients": ["gargantuan", "vampiric"],
+    "used_in": ["crystalskinned", "abberathtouched"],
     "extra": "Rewards are rolled 1 additional time, choosing the rarest result",
     "tier": 2
   },
   "executioner": {
     "name": "Executioner",
     "description": "Monster gains Damage based on missing enemy Life. Monster has an aura that prevents enemies recovering Life and Energy Shield above 50%",
-    "rewards": [
-      "Legion",
-      "Breach"
-    ],
-    "ingredients": [
-      "frenzied",
-      "berserker"
-    ],
-    "used_in": [
-      "empoweringminions",
-      "tukohamatouched"
-    ],
+    "rewards": ["Legion", "Breach"],
+    "ingredients": ["frenzied", "berserker"],
+    "used_in": ["empoweringminions", "tukohamatouched"],
     "extra": null,
     "tier": 2
   },
   "hexer": {
     "name": "Hexer",
     "description": "Monster is Hexproof. Monster is followed by a Hexing Effigy that creates Hexing areas",
-    "rewards": [
-      "Essences",
-      "Essences"
-    ],
-    "ingredients": [
-      "chaosweaver",
-      "echoist"
-    ],
-    "used_in": [
-      "temporalbubble",
-      "effigy"
-    ],
+    "rewards": ["Essences", "Essences"],
+    "ingredients": ["chaosweaver", "echoist"],
+    "used_in": ["temporalbubble", "effigy"],
     "extra": null,
     "tier": 2
   },
   "droughtbringer": {
     "name": "Drought Bringer",
     "description": "Monster disables Flask effects on hit. Monster has an aura that drains Flask charges and prevents gaining Flask charges",
-    "rewards": [
-      "Labyrinth",
-      "Labyrinth"
-    ],
-    "ingredients": [
-      "malediction",
-      "deadeye"
-    ],
-    "used_in": [
-      "shakaritouched"
-    ],
+    "rewards": ["Labyrinth", "Labyrinth"],
+    "ingredients": ["malediction", "deadeye"],
+    "used_in": ["shakaritouched"],
     "extra": null,
     "tier": 2
   },
   "entangler": {
     "name": "Entangler",
     "description": "Monster creates Thorned Vines that slow and deal Chaos Damage over time.",
-    "rewards": [
-      "Fossils",
-      "Fossils"
-    ],
-    "ingredients": [
-      "toxic",
-      "bloodletter"
-    ],
-    "used_in": [
-      "arakaalitouched",
-      "shakaritouched"
-    ],
+    "rewards": ["Fossils", "Fossils"],
+    "ingredients": ["toxic", "bloodletter"],
+    "used_in": ["arakaalitouched", "shakaritouched"],
     "extra": null,
     "tier": 2
   },
   "temporalbubble": {
     "name": "Temporal Bubble",
     "description": "Monster is protected by a Temporal Bubble that severely slows those in it and cannot be damaged by those outside of it",
-    "rewards": [
-      "Heist",
-      "Expedition"
-    ],
-    "ingredients": [
-      "juggernaut",
-      "hexer",
-      "arcanebuffer"
-    ],
+    "rewards": ["Heist", "Expedition"],
+    "ingredients": ["juggernaut", "hexer", "arcanebuffer"],
     "used_in": [],
     "extra": null,
     "tier": 3
@@ -584,14 +344,8 @@
   "treanthorde": {
     "name": "Treant Horde",
     "description": "Monster's minions are replaced with powerful Treants. Some Damage taken from the monster is split between the Treants",
-    "rewards": [
-      "Generic"
-    ],
-    "ingredients": [
-      "toxic",
-      "sentinel",
-      "steelinfused"
-    ],
+    "rewards": ["Generic"],
+    "ingredients": ["toxic", "sentinel", "steelinfused"],
     "used_in": [],
     "extra": "Monster's Minions drop a randomly-chosen Reward Type",
     "tier": 2
@@ -599,230 +353,116 @@
   "froststrider": {
     "name": "Frost Strider",
     "description": "Monster leaves Chilling Ground in its wake. Minions create Frost Bearers on death",
-    "rewards": [
-      "Armour",
-      "Armour",
-      "Armour"
-    ],
-    "ingredients": [
-      "frostweaver",
-      "hasted"
-    ],
-    "used_in": [
-      "lunaristouched"
-    ],
+    "rewards": ["Armour", "Armour", "Armour"],
+    "ingredients": ["frostweaver", "hasted"],
+    "used_in": ["lunaristouched"],
     "extra": null,
     "tier": 2
   },
   "iceprison": {
     "name": "Ice Prison",
     "description": "Monster periodically entraps players in a cage of ice",
-    "rewards": [
-      "Armour",
-      "Armour"
-    ],
-    "ingredients": [
-      "permafrost",
-      "sentinel"
-    ],
-    "used_in": [
-      "brinekingtouched"
-    ],
+    "rewards": ["Armour", "Armour"],
+    "ingredients": ["permafrost", "sentinel"],
+    "used_in": ["brinekingtouched"],
     "extra": "Rewards are rolled 1 additional time, choosing the rarest result",
     "tier": 2
   },
   "souleater": {
     "name": "Soul Eater",
     "description": "Monster empowers when nearby allies die. Periodically summons Phantasms",
-    "rewards": [
-      "Maps",
-      "Maps"
-    ],
-    "ingredients": [
-      "soulconduit",
-      "necromancer",
-      "gargantuan"
-    ],
-    "used_in": [
-      "shakaritouched"
-    ],
+    "rewards": ["Maps", "Maps"],
+    "ingredients": ["soulconduit", "necromancer", "gargantuan"],
+    "used_in": ["shakaritouched"],
     "extra": null,
     "tier": 3
   },
   "flamestrider": {
     "name": "Flame Strider",
     "description": "Monster leaves Burning Ground in its wake. Minions create Flame Bearers on death",
-    "rewards": [
-      "Weapon",
-      "Weapon",
-      "Weapon"
-    ],
-    "ingredients": [
-      "flameweaver",
-      "hasted"
-    ],
-    "used_in": [
-      "abberathtouched"
-    ],
+    "rewards": ["Weapon", "Weapon", "Weapon"],
+    "ingredients": ["flameweaver", "hasted"],
+    "used_in": ["abberathtouched"],
     "extra": null,
     "tier": 2
   },
   "corpsedetonator": {
     "name": "Corpse Detonator",
     "description": "Monster detonates nearby Corpses. Monster periodically creates Corpses",
-    "rewards": [
-      "DivinationCards",
-      "DivinationCards"
-    ],
-    "ingredients": [
-      "necromancer",
-      "incendiary"
-    ],
-    "used_in": [
-      "arakaalitouched",
-      "kitavatouched"
-    ],
+    "rewards": ["DivinationCards", "DivinationCards"],
+    "ingredients": ["necromancer", "incendiary"],
+    "used_in": ["arakaalitouched", "kitavatouched"],
     "extra": null,
     "tier": 3
   },
   "evocationist": {
     "name": "Evocationist",
     "description": "Monster is imbued with Elemental Damage, Resistances and Ailments",
-    "rewards": [
-      "Generic",
-      "Weapon",
-      "Armour",
-      "Trinkets"
-    ],
-    "ingredients": [
-      "flameweaver",
-      "frostweaver",
-      "stormweaver"
-    ],
-    "used_in": [
-      "empoweredelements"
-    ],
+    "rewards": ["Generic", "Weapon", "Armour", "Trinkets"],
+    "ingredients": ["flameweaver", "frostweaver", "stormweaver"],
+    "used_in": ["empoweredelements"],
     "extra": null,
     "tier": 2
   },
   "magmabarrier": {
     "name": "Magma Barrier",
     "description": "Monster is protected by a Magmatic shield that explodes when depleted. Monster periodically creates Volatile Flamebloods",
-    "rewards": [
-      "Weapon",
-      "Weapon"
-    ],
-    "ingredients": [
-      "incendiary",
-      "bonebreaker"
-    ],
-    "used_in": [
-      "solaristouched",
-      "tukohamatouched"
-    ],
+    "rewards": ["Weapon", "Weapon"],
+    "ingredients": ["incendiary", "bonebreaker"],
+    "used_in": ["solaristouched", "tukohamatouched"],
     "extra": "Rewards are rolled 1 additional time, choosing the rarest result",
     "tier": 2
   },
   "mirrorimage": {
     "name": "Mirror Image",
     "description": "Monster can create illusions of itself",
-    "rewards": [
-      "Scarabs"
-    ],
-    "ingredients": [
-      "echoist",
-      "soulconduit"
-    ],
-    "used_in": [
-      "innocencetouched"
-    ],
+    "rewards": ["Scarabs"],
+    "ingredients": ["echoist", "soulconduit"],
+    "used_in": ["innocencetouched"],
     "extra": "Rewards are rolled 2 additional times, choosing the rarest result",
     "tier": 2
   },
   "stormstrider": {
     "name": "Storm Strider",
     "description": "Monster leaves Shocking Ground in its wake and spawns Lightning Mirages when hit. Minions create Storm Bearers on death",
-    "rewards": [
-      "Trinkets",
-      "Trinkets",
-      "Trinkets"
-    ],
-    "ingredients": [
-      "stormweaver",
-      "hasted"
-    ],
-    "used_in": [
-      "brinekingtouched"
-    ],
+    "rewards": ["Trinkets", "Trinkets", "Trinkets"],
+    "ingredients": ["stormweaver", "hasted"],
+    "used_in": ["brinekingtouched"],
     "extra": null,
     "tier": 2
   },
   "manasiphoner": {
     "name": "Mana Siphoner",
     "description": "Monster is surrounded by a ring that deals Lightning Damage over time as well as draining Mana",
-    "rewards": [
-      "Trinkets",
-      "Trinkets"
-    ],
-    "ingredients": [
-      "consecrator",
-      "dynamo"
-    ],
-    "used_in": [
-      "innocencetouched"
-    ],
+    "rewards": ["Trinkets", "Trinkets"],
+    "ingredients": ["consecrator", "dynamo"],
+    "used_in": ["innocencetouched"],
     "extra": "Rewards are rolled 1 additional time, choosing the rarest result",
     "tier": 2
   },
   "corrupter": {
     "name": "Corrupter",
     "description": "Monster inflicts Corrupted Blood on Hit and when Hit. Minions create Corrupted Bubbles on death",
-    "rewards": [
-      "Abyss",
-      "Abyss"
-    ],
-    "ingredients": [
-      "bloodletter",
-      "chaosweaver"
-    ],
-    "used_in": [
-      "effigy",
-      "kitavatouched"
-    ],
+    "rewards": ["Abyss", "Abyss"],
+    "ingredients": ["bloodletter", "chaosweaver"],
+    "used_in": ["effigy", "kitavatouched"],
     "extra": "Items dropped from the Monster and its Minions are Corrupted",
     "tier": 2
   },
   "invulnerable": {
     "name": "Invulnerable",
     "description": "Monster and its Minions periodically become immune to all Damage. Minions cannot die while Monster is alive",
-    "rewards": [
-      "Delirium",
-      "Metamorphosis"
-    ],
-    "ingredients": [
-      "sentinel",
-      "juggernaut",
-      "consecrator"
-    ],
-    "used_in": [
-      "lunaristouched",
-      "solaristouched"
-    ],
+    "rewards": ["Delirium", "Metamorphosis"],
+    "ingredients": ["sentinel", "juggernaut", "consecrator"],
+    "used_in": ["lunaristouched", "solaristouched"],
     "extra": null,
     "tier": 2
   },
   "crystalskinned": {
     "name": "Crystal-skinned",
     "description": "Monster triggers the creation of Crystals when hit. Crystals explode when the Monster dies",
-    "rewards": [
-      "Harbinger",
-      "Harbinger"
-    ],
-    "ingredients": [
-      "permafrost",
-      "rejuvenating",
-      "berserker"
-    ],
+    "rewards": ["Harbinger", "Harbinger"],
+    "ingredients": ["permafrost", "rejuvenating", "berserker"],
     "used_in": [],
     "extra": null,
     "tier": 3
@@ -830,15 +470,8 @@
   "empoweredelements": {
     "name": "Empowered Elements",
     "description": "Monster cycles between imbued damage of a particular type and immunity to all other damage types",
-    "rewards": [
-      "Uniques",
-      "Uniques"
-    ],
-    "ingredients": [
-      "evocationist",
-      "steelinfused",
-      "chaosweaver"
-    ],
+    "rewards": ["Uniques", "Uniques"],
+    "ingredients": ["evocationist", "steelinfused", "chaosweaver"],
     "used_in": [],
     "extra": "Rewards are rolled 1 additional time, choosing the rarest result",
     "tier": 3
@@ -846,15 +479,8 @@
   "effigy": {
     "name": "Effigy",
     "description": "Monster creates an Effigy of the player. Damage dealt to the Effigy is also reflected to the bonded player",
-    "rewards": [
-      "DivinationCards",
-      "DivinationCards"
-    ],
-    "ingredients": [
-      "hexer",
-      "malediction",
-      "corrupter"
-    ],
+    "rewards": ["DivinationCards", "DivinationCards"],
+    "ingredients": ["hexer", "malediction", "corrupter"],
     "used_in": [],
     "extra": "Rewards are rolled 1 additional time, choosing the rarest result",
     "tier": 3
@@ -862,48 +488,26 @@
   "lunaristouched": {
     "name": "Lunaris-touched",
     "description": "Monster uses the abilities of Lunaris",
-    "rewards": [
-      "Uniques"
-    ],
-    "ingredients": [
-      "invulnerable",
-      "froststrider",
-      "empoweringminions"
-    ],
-    "used_in": [
-      "innocencetouched"
-    ],
+    "rewards": ["Uniques"],
+    "ingredients": ["invulnerable", "froststrider", "empoweringminions"],
+    "used_in": ["innocencetouched"],
     "extra": "All Reward Types have an additional reward",
     "tier": 4
   },
   "solaristouched": {
     "name": "Solaris-touched",
     "description": "Monster uses the abilities of Solaris",
-    "rewards": [
-      "Scarabs"
-    ],
-    "ingredients": [
-      "invulnerable",
-      "magmabarrier",
-      "empoweringminions"
-    ],
-    "used_in": [
-      "innocencetouched"
-    ],
+    "rewards": ["Scarabs"],
+    "ingredients": ["invulnerable", "magmabarrier", "empoweringminions"],
+    "used_in": ["innocencetouched"],
     "extra": "All Reward Types have an additional reward",
     "tier": 4
   },
   "arakaalitouched": {
     "name": "Arakaali-touched",
     "description": "Monster uses the abilities of Arakaali",
-    "rewards": [
-      "DivinationCards"
-    ],
-    "ingredients": [
-      "corpsedetonator",
-      "entangler",
-      "assassin"
-    ],
+    "rewards": ["DivinationCards"],
+    "ingredients": ["corpsedetonator", "entangler", "assassin"],
     "used_in": [],
     "extra": "All Reward Types are Divination Cards",
     "tier": 4
@@ -911,16 +515,8 @@
   "brinekingtouched": {
     "name": "Brine King-touched",
     "description": "Monster uses the abilities of the Brine King",
-    "rewards": [
-      "Armour",
-      "Armour",
-      "Armour"
-    ],
-    "ingredients": [
-      "iceprison",
-      "stormstrider",
-      "heraldingminions"
-    ],
+    "rewards": ["Armour", "Armour", "Armour"],
+    "ingredients": ["iceprison", "stormstrider", "heraldingminions"],
     "used_in": [],
     "extra": "Rewards are rolled 6 additional times, choosing the rarest result",
     "tier": 3
@@ -928,52 +524,26 @@
   "tukohamatouched": {
     "name": "Tukohama-touched",
     "description": "Monster uses the abilities of Tukohama",
-    "rewards": [
-      "Weapon",
-      "Weapon",
-      "Fragments"
-    ],
-    "ingredients": [
-      "bonebreaker",
-      "executioner",
-      "magmabarrier"
-    ],
-    "used_in": [
-      "kitavatouched"
-    ],
+    "rewards": ["Weapon", "Weapon", "Fragments"],
+    "ingredients": ["bonebreaker", "executioner", "magmabarrier"],
+    "used_in": ["kitavatouched"],
     "extra": "Rewards are rolled 4 additional times, choosing the rarest result",
     "tier": 3
   },
   "abberathtouched": {
     "name": "Abberath-touched",
     "description": "Monster uses the abilities of Abberath",
-    "rewards": [
-      "Trinkets",
-      "Trinkets",
-      "Maps"
-    ],
-    "ingredients": [
-      "flamestrider",
-      "frenzied",
-      "rejuvenating"
-    ],
-    "used_in": [
-      "kitavatouched"
-    ],
+    "rewards": ["Trinkets", "Trinkets", "Maps"],
+    "ingredients": ["flamestrider", "frenzied", "rejuvenating"],
+    "used_in": ["kitavatouched"],
     "extra": "Rewards are rolled 4 additional times, choosing the rarest result",
     "tier": 3
   },
   "shakaritouched": {
     "name": "Shakari-touched",
     "description": "Monster uses the abilities of Shakari",
-    "rewards": [
-      "Uniques"
-    ],
-    "ingredients": [
-      "entangler",
-      "souleater",
-      "droughtbringer"
-    ],
+    "rewards": ["Uniques"],
+    "ingredients": ["entangler", "souleater", "droughtbringer"],
     "used_in": [],
     "extra": "All Reward Types are Uniques",
     "tier": 4
@@ -981,11 +551,7 @@
   "innocencetouched": {
     "name": "Innocence-touched",
     "description": "Monster uses the abilities of Innocence",
-    "rewards": [
-      "Currency",
-      "Currency",
-      "Currency"
-    ],
+    "rewards": ["Currency", "Currency", "Currency"],
     "ingredients": [
       "lunaristouched",
       "solaristouched",
@@ -999,9 +565,7 @@
   "kitavatouched": {
     "name": "Kitava-touched",
     "description": "Monster uses the abilities of Kitava",
-    "rewards": [
-      "Generic"
-    ],
+    "rewards": ["Generic"],
     "ingredients": [
       "tukohamatouched",
       "abberathtouched",

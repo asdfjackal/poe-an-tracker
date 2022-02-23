@@ -1,34 +1,48 @@
-import { Autocomplete, Box, Button, Modal, TextField, Typography } from '@mui/material';
-import { useState } from 'react'
-import data from '../data.json'
+import {
+  Autocomplete,
+  Box,
+  Button,
+  Modal,
+  TextField,
+  Typography,
+} from "@mui/material";
+import { useState } from "react";
+import data from "../data.json";
 
 const style = {
-  position: 'absolute' as 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
+  position: "absolute" as "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
   width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
+  bgcolor: "background.paper",
+  border: "2px solid #000",
   boxShadow: 24,
   p: 4,
 };
 
-export default function ActionModal(props:{title: string, show: boolean, action: Function, close: Function}){
-  const {title, show, action, close} = props
-  const [value, setValue] = useState<{label: string, key: string} | null>(null);
+export default function ActionModal(props: {
+  title: string;
+  show: boolean;
+  action: Function;
+  close: Function;
+}) {
+  const { title, show, action, close } = props;
+  const [value, setValue] = useState<{ label: string; key: string } | null>(
+    null
+  );
 
   const options = Object.entries(data).map(([key, value]) => ({
     label: value.name,
-    key
-  }))
+    key,
+  }));
 
   const submit = () => {
-    if(value !== null){
-      action(value.key)
-      close()
+    if (value !== null) {
+      action(value.key);
+      close();
     }
-  }
+  };
 
   return (
     <div>
@@ -45,16 +59,23 @@ export default function ActionModal(props:{title: string, show: boolean, action:
 
           <Autocomplete
             value={value}
-            onChange={(event: any, newValue: {label: string, key: string} | null) => {
+            onChange={(
+              event: any,
+              newValue: { label: string; key: string } | null
+            ) => {
               setValue(newValue);
             }}
             autoHighlight={true}
             autoSelect={true}
             options={options}
             sx={{ width: 300 }}
-            renderInput={(params) => <TextField {...params} label="Controllable" />}
+            renderInput={(params) => (
+              <TextField {...params} label="Controllable" />
+            )}
           />
-          <Button variant="contained" onClick={() => submit()}>Submit</Button>
+          <Button variant="contained" onClick={() => submit()}>
+            Submit
+          </Button>
         </Box>
       </Modal>
     </div>

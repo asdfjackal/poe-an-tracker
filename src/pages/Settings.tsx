@@ -1,7 +1,5 @@
-import { Typography } from '@mui/material';
+import { Typography } from "@mui/material";
 
 export default function Settings() {
-  return (
-    <Typography>TODO</Typography>
-  )
+  return <Typography>TODO</Typography>;
 }

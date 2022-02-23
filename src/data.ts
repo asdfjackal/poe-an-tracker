@@ -1,7 +1,5 @@
-import rawData from './data.json'
+import rawData from "./data.json";
 
-const data = new Map(Object.entries(rawData))
+const data = new Map(Object.entries(rawData));
 
-export {
-  data
-}
+export { data };
