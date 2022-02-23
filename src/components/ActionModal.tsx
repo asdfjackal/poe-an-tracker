@@ -1,4 +1,3 @@
-import { AirlineSeatIndividualSuiteOutlined } from "@mui/icons-material";
 import {
   Autocomplete,
   Box,
