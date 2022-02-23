@@ -1,3 +1,4 @@
+import { AirlineSeatIndividualSuiteOutlined } from "@mui/icons-material";
 import {
   Autocomplete,
   Box,
@@ -26,20 +27,24 @@ export default function ActionModal(props: {
   show: boolean;
   action: Function;
   close: Function;
+  crafts: boolean;
 }) {
-  const { title, show, action, close } = props;
+  const { title, show, action, close, crafts } = props;
   const [value, setValue] = useState<{ label: string; key: string } | null>(
     null
   );
 
-  const options = Object.entries(data).map(([key, value]) => ({
-    label: value.name,
-    key,
-  }));
+  const options = Object.entries(data)
+    .filter(([key, value]) => (crafts ? value.tier > 1 : true))
+    .map(([key, value]) => ({
+      label: value.name,
+      key,
+    }));
 
   const submit = () => {
     if (value !== null) {
       action(value.key);
+      setValue(null);
       close();
     }
   };
@@ -69,10 +74,9 @@ export default function ActionModal(props: {
             autoSelect={true}
             options={options}
             sx={{ width: 300 }}
-            renderInput={(params) => (
-              <TextField {...params} label="Controllable" />
-            )}
+            renderInput={(params) => <TextField autoFocus={true} {...params} />}
           />
+
           <Button variant="contained" onClick={() => submit()}>
             Submit
           </Button>

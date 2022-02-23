@@ -8,7 +8,6 @@ import { Modifier } from "../react-app-env";
 export default function Crafting(props: {
   inventory: Map<string, number>;
   craft: Function;
-
   favorites: string[];
   toggleFavorite: Function;
 }) {

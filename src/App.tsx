@@ -39,6 +39,7 @@ function App() {
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
       if (activeModal === ModalState.None) {
+        e.preventDefault();
         switch (e.key) {
           case "a":
             setActiveModal(ModalState.Add);
@@ -194,18 +195,21 @@ function App() {
         show={activeModal === ModalState.Add}
         action={increment}
         close={closeModal}
+        crafts={false}
       />
       <ActionModal
         title="Remove Item from Inventory"
         show={activeModal === ModalState.Remove}
         action={decrement}
         close={closeModal}
+        crafts={false}
       />
       <ActionModal
         title="Craft Item"
         show={activeModal === ModalState.Craft}
         action={craft}
         close={closeModal}
+        crafts={true}
       />
     </ThemeProvider>
   );
