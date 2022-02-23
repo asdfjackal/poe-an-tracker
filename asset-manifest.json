@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/poe-an-tracker/static/js/main.b101f03f.js",
+    "main.js": "/poe-an-tracker/static/js/main.4e8153e0.js",
     "static/js/787.c08d20af.chunk.js": "/poe-an-tracker/static/js/787.c08d20af.chunk.js",
     "index.html": "/poe-an-tracker/index.html",
-    "main.b101f03f.js.map": "/poe-an-tracker/static/js/main.b101f03f.js.map",
+    "main.4e8153e0.js.map": "/poe-an-tracker/static/js/main.4e8153e0.js.map",
     "787.c08d20af.chunk.js.map": "/poe-an-tracker/static/js/787.c08d20af.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.b101f03f.js"
+    "static/js/main.4e8153e0.js"
   ]
 }
