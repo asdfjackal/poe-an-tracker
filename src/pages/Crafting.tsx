@@ -1,7 +1,8 @@
-import { Avatar, Chip, Grid, List, Typography } from "@mui/material";
+import { Grid, List, Typography } from "@mui/material";
 import { useState } from "react";
 import AvailableCraft from "../components/AvailableCraft";
 import FavoriteCraft from "../components/FavoriteCraft";
+import TargetChip from "../components/TargetChip";
 import { data } from "../data";
 import { Modifier } from "../react-app-env";
 
@@ -53,7 +54,8 @@ export default function Crafting(props: {
       key,
       value,
       value.ingredients.includes(hoveredTarget) ||
-        value.used_in.includes(hoveredTarget),
+        value.used_in.includes(hoveredTarget) ||
+        key === hoveredTarget,
     ]);
 
   const tieredTargets = targetItems.reduce(function (tiers: any, target) {
@@ -88,26 +90,14 @@ export default function Crafting(props: {
               <Typography align="center">Tier {tier}</Typography>
               {targets
                 .sort((a, b) => a[1].name.localeCompare(b[1].name))
-                .map(([key, value, colored]) => (
+                .map(([key, value, color]) => (
                   <>
-                    <Chip
-                      onMouseEnter={() => {
-                        setHoveredTarget(key);
-                      }}
-                      onMouseLeave={() => {
-                        setHoveredTarget(null);
-                      }}
-                      avatar={
-                        <Avatar
-                          src={
-                            process.env.PUBLIC_URL +
-                            `/images/archnemesis/${key}.png`
-                          }
-                        />
-                      }
-                      color={colored ? "primary" : undefined}
-                      label={value.name}
-                      variant={colored ? undefined : "outlined"}
+                    <TargetChip
+                      key={key}
+                      dataKey={key}
+                      value={value}
+                      color={color}
+                      setHovered={(target: string) => setHoveredTarget(target)}
                     />
                     &nbsp;
                   </>
